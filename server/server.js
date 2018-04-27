@@ -39,7 +39,7 @@ app.get('/todos/:id', (req,res) => {
             if(!result){
                 res.status(404).send();
             }else{
-                res.send(JSON.stringify(result,undefined,2));
+                res.send(result);
             }
         }).catch((err) => {
             res.status(400).send();
