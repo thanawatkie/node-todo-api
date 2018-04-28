@@ -93,7 +93,7 @@ app.patch('/todos/:id', (req,res) => {
             res.status(400).send();
         });
     }
-})
+});
 
 var port = process.env.PORT || 3000;
 app.listen( port, () => {
